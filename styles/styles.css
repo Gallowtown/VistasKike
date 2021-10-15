@@ -84,6 +84,7 @@ body {
 .main-container {
   display: grid;
   grid-template-rows: auto 1fr;
+  place-items: center stretch;
   height: 100vh;
   padding: 14%;
 }
@@ -138,6 +139,12 @@ body {
   gap: 1rem;
   margin: 0.1rem 0;
 }
+.table-container tbody tr input {
+  width: 100%;
+  background: var(--gris-secundario);
+  border: none;
+  text-align: center;
+}
 
 .table-container tbody td:nth-child(1) {
   border: 1px solid red;
@@ -187,6 +194,7 @@ body {
   padding: 1rem;
   margin-top: 2rem;
   height: 300px;
+  border: 1px solid var(--azul-principal);
 }
 
 .big-box h3 {
